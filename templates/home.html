@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Main banner section -->
+    <section class="hero-section text-center">
+        <h1 class="display-4">Discover the Best in Quality & Style</h1>
+        <p class="lead">Curated collections tailored just for you. Explore our premium products and elevate your
+            lifestyle with unbeatable prices!</p>
+        <a href="/products" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+    </section>
+
+    <!-- Featured products or categories -->
+    <section class="mt-5 featured-categories">
+        <h2 class="mb-4 text-center">Featured Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="static/images/laptop.jpg" class="card-img-top" alt="Electronics">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">Explore the latest Laptop and tech accessories.</p>
+                        <a href="/products?category=electronics" class="btn btn-outline-primary">Shop Electronics</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="static/images/product4.jpg" class="card-img-top" alt="Fashion">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cosmetics</h5>
+                        <p class="card-text">Discover trending Cosmetics items and accessories.</p>
+                        <a href="/products?category=fashion" class="btn btn-outline-primary">Shop Fashion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="static/images/product8.jpg" class="card-img-top" alt="Home & Kitchen">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Home & Kitchen</h5>
+                        <p class="card-text">Find everything you need for a best cooking.</p>
+                        <a href="/products?category=home-kitchen" class="btn btn-outline-primary">Shop Home &
+                            Kitchen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="mt-5 about-section text-center">
+        <h2>Who We Are</h2>
+        <p>At Saurav E-Commerce, we bring you a curated selection of top-tier products that combine quality, innovation,
+            and style. From the latest in electronics to timeless fashion and home essentials, we are committed to
+            delivering excellence with every purchase. Our focus is on creating a seamless shopping experience where
+            your satisfaction always comes first.</p>
+
+    </section>
+</div>
+{% endblock %}
