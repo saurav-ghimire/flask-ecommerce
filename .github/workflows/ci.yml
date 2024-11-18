@@ -49,8 +49,8 @@ jobs:
         python -m unittest discover tests/  # Run all tests in the tests/ directory
 
     - name: Upload test results
-      if: failure()
-      uses: actions/upload-artifact@v2
+      if: failure()  # Only upload the artifact if tests fail
+      uses: actions/upload-artifact@v3  # Update to the latest version of the upload artifact action
       with:
         name: test-results
         path: test-report.xml  # Optional: you can upload test results (if you generate them)
